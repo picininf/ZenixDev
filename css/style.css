@@ -3,8 +3,8 @@
    Troque as cores da marca nas variáveis abaixo.
    ========================================================== */
 :root {
-  --primary: #7c3aed;       /* roxo */
-  --secondary: #06b6d4;     /* ciano */
+  --primary: #2563eb;       /* azul */
+  --secondary: #10b981;     /* verde-esmeralda */
   --grad: linear-gradient(135deg, var(--primary), var(--secondary));
 
   --bg: #0b0d17;
@@ -59,8 +59,8 @@ ul, ol { list-style: none; }
   font-family: inherit;
 }
 .btn:hover { transform: translateY(-2px); }
-.btn--primary { background: var(--grad); color: #fff; box-shadow: 0 10px 30px rgba(124, 58, 237, .35); }
-.btn--primary:hover { box-shadow: 0 14px 36px rgba(124, 58, 237, .5); }
+.btn--primary { background: var(--grad); color: #fff; box-shadow: 0 10px 30px rgba(37, 99, 235, .35); }
+.btn--primary:hover { box-shadow: 0 14px 36px rgba(37, 99, 235, .5); }
 .btn--ghost { border-color: var(--border); color: var(--text); }
 .btn--ghost:hover { border-color: var(--secondary); }
 .btn--light { background: #fff; color: #1a1033; }
@@ -71,9 +71,9 @@ ul, ol { list-style: none; }
   display: inline-block;
   padding: 6px 14px;
   border-radius: 999px;
-  background: rgba(124, 58, 237, .12);
-  border: 1px solid rgba(124, 58, 237, .35);
-  color: #c4b5fd;
+  background: rgba(37, 99, 235, .12);
+  border: 1px solid rgba(37, 99, 235, .35);
+  color: #93c5fd;
   font-size: .82rem; font-weight: 600;
   letter-spacing: .02em;
   margin-bottom: 18px;
@@ -121,13 +121,13 @@ ul, ol { list-style: none; }
 .hero::before {
   content: ""; position: absolute; inset: -20% -10% auto auto;
   width: 700px; height: 700px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(124, 58, 237, .35), transparent 65%);
+  background: radial-gradient(circle, rgba(37, 99, 235, .35), transparent 65%);
   pointer-events: none;
 }
 .hero::after {
   content: ""; position: absolute; inset: auto auto -30% -10%;
   width: 600px; height: 600px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(6, 182, 212, .2), transparent 65%);
+  background: radial-gradient(circle, rgba(16, 185, 129, .2), transparent 65%);
   pointer-events: none;
 }
 .hero__inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: center; }
@@ -163,7 +163,7 @@ ul, ol { list-style: none; }
   font-family: "Consolas", "Courier New", monospace; font-size: .85rem;
   background: #0d1022; border-radius: 10px; padding: 16px; color: #cbd5e1; line-height: 1.7;
 }
-.c1 { color: #c084fc; } .c2 { color: #67e8f9; } .c3 { color: #fbbf24; } .c4 { color: #86efac; }
+.c1 { color: #c084fc; } .c2 { color: #6ee7b7; } .c3 { color: #fbbf24; } .c4 { color: #86efac; }
 
 @keyframes float {
   0%, 100% { transform: rotate(2deg) translateY(0); }
@@ -188,14 +188,14 @@ ul, ol { list-style: none; }
   padding: 32px 28px;
   transition: transform .25s, border-color .25s, box-shadow .25s;
 }
-.card:hover { transform: translateY(-6px); border-color: rgba(124, 58, 237, .6); box-shadow: var(--shadow); }
+.card:hover { transform: translateY(-6px); border-color: rgba(37, 99, 235, .6); box-shadow: var(--shadow); }
 .card__icon {
   width: 52px; height: 52px; border-radius: 14px;
   display: grid; place-items: center;
-  background: rgba(124, 58, 237, .15);
+  background: rgba(37, 99, 235, .15);
   margin-bottom: 22px;
 }
-.card__icon svg { width: 26px; height: 26px; fill: none; stroke: #c4b5fd; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.card__icon svg { width: 26px; height: 26px; fill: none; stroke: #93c5fd; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .card h3 { font-size: 1.2rem; margin-bottom: 10px; }
 .card p { color: var(--muted); }
 
@@ -269,10 +269,10 @@ ul, ol { list-style: none; }
 .contacts__icon {
   display: grid; place-items: center;
   width: 44px; height: 44px; border-radius: 12px;
-  background: rgba(6, 182, 212, .12);
+  background: rgba(16, 185, 129, .12);
   flex-shrink: 0;
 }
-.contacts__icon svg { width: 22px; height: 22px; fill: none; stroke: #67e8f9; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.contacts__icon svg { width: 22px; height: 22px; fill: none; stroke: #6ee7b7; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
 .form {
   background: var(--surface);
@@ -295,7 +295,7 @@ ul, ol { list-style: none; }
 }
 .form textarea { resize: vertical; }
 .form input:focus, .form select:focus, .form textarea:focus {
-  outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(124, 58, 237, .25);
+  outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37, 99, 235, .25);
 }
 .form .is-invalid { border-color: #ef4444; }
 .form__msg { margin-top: 14px; font-size: .92rem; min-height: 1.2em; }
